@@ -10,6 +10,7 @@ class Account < ApplicationRecord
       self.balance = self.balance - transaction.amount
       else
        return 'Your balance is too low'
+     end
     end
   end
 end

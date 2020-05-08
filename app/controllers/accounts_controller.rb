@@ -10,7 +10,8 @@ class AccountsController < ApplicationController
     if @account.save
       render json: @account
     else
-      render {error: 'Issue creating account'}
+      # render {error: 'Issue creating account'}
+    end
   end
 
   def show
